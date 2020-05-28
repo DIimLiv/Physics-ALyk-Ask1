@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8" />
+    <title>Scientific Animations and Robotics</title>
+    <link rel="icon" type="image/png"
+      href="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/12/20/18/atom-quantum.jpg?w968">
+
+      <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
+        </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      
+  </head>
+
+  <body>
+    <h1>'Ασκηση 1 σχ. βιβλ. σελ. 69</h1>
+    <br />
+    <div>
+      <p id="ekf">Ένα αυτοκίνητο διανύει απόσταση $ 120\,m $ σε χρόνο $ t = 4\,s $ με σταθερή ταχύτητα. <br> Να υπολογίσετε
+        την τιμή της ταχύτητας
+        του αυτοκινήτου και να κάνετε τα διαγράμματα ταχύτητας-χρόνου και διαστήματος-χρόνου. </br>
+      </p>
+    </div>
+    <br />
+    <div>
+      <p id="apant">Απάντηση:
+        <br />
+        Αφού το αυτοκίνητο κάνει ευθύγραμμα ομαλή κίνηση παίρνουμε τον τύπο της ταχύτητας που ισχύει στην ΕΟΚ:
+        <br />
+        $$ u=\displaystyle\frac{\Delta x}{\Delta t}=\displaystyle\frac{120}{4} \Rightarrow u = 30\,m/s . $$
+        <br>
+        Παρακάτω μπορείτε να δείτε μία προσομοίωση σε πραγματικό χρόνο της άσκησης. Μπορείτε να μετακινήσετε και το slider για να πάρετε και άλλες τιμές της ταχύτητας και να δείτε πως μεταβάλλονται αντίστοιχα τα διαγράμματα. 
+      </p>
+    
+    </div>
+    <br>
+
+    <p id="canvasArea"></p>
+  
+
+      <p id="logo">
+        © 2020 Δ.Λ.
+      </p>
+    
+ 
+    <script src="constVelocity.js"></script>
+    <script src="ball.js"></script>
+    <script src="vector2D.js"></script>
+    <script src="line.js"></script>
+    <script src="text.js"></script>
+
+
+  </body>
+</html>
